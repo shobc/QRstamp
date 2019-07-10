@@ -12,15 +12,14 @@ public class Factory{
     private Factory(){}
     public static String[] read(String key){
         String[] judgement = null;
-
         try{
             path = PathHolder.pathName+"ManyFile/test.properties";
             System.out.println(path);
             System.out.println(System.getProperty("java.class.path"));
             prop.load(new FileInputStream(path));
-
             String value = prop.getProperty(key);
             judgement = value.split(",");
+
         }catch(IOException e){
             e.printStackTrace();
         }

@@ -7,6 +7,16 @@
         <servlet-name>QRServlet</servlet-name>
         <url-pattern>/QRServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
     <servlet>
         <servlet-name>stamp</servlet-name>
         <jsp-file>/stamp.jsp</jsp-file>
@@ -15,4 +25,7 @@
         <servlet-name>stamp</servlet-name>
         <url-pattern>/stamp</url-pattern>
     </servlet-mapping>
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
 </web-app>
