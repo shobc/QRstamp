@@ -1,0 +1,18 @@
+<web-app>
+    <servlet>
+        <servlet-name>QRServlet</servlet-name>
+        <servlet-class>QRServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QRServlet</servlet-name>
+        <url-pattern>/QRServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>stamp</servlet-name>
+        <jsp-file>/stamp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>stamp</servlet-name>
+        <url-pattern>/stamp</url-pattern>
+    </servlet-mapping>
+</web-app>
