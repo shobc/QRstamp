@@ -8,13 +8,11 @@ import java.io.FileOutputStream;
 
 public class Factory{
     private static Properties prop = new Properties();
-    private static String path;
+    private static String path = PathHolder.pathName+"ManyFile\\test.properties";
     private Factory(){}
     public static String[] read(String key){
         String[] judgement = null;
         try{
-            path = PathHolder.pathName+"ManyFile/test.properties";
-            System.out.println(path);
             System.out.println(System.getProperty("java.class.path"));
             prop.load(new FileInputStream(path));
             String value = prop.getProperty(key);
@@ -29,6 +27,7 @@ public class Factory{
         try{
             String judge = String.join(",", judgement);
             prop.setProperty(key,judge);
+            System.out.println(path);
             prop.store(new FileOutputStream(path), "Comments");
         }catch(IOException e){
             e.printStackTrace();

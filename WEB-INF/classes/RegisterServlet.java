@@ -9,10 +9,12 @@ import javax.servlet.ServletContext;
 
 import Authentication.*;
 
+import function.*;
 
 public class RegisterServlet extends HttpServlet{
     public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
         req.setCharacterEncoding("Windows-31J");
+        PathHolder.pathName = getServletContext().getRealPath("/");
         ServletContext context =getServletContext();
         UserCount uc = new UserCount(context);
         InsertSession is = new InsertSession(uc);

@@ -17,26 +17,19 @@ public class QRServlet extends HttpServlet{
         req.setCharacterEncoding("Windows-31j");
         String Department = req.getParameter("Department");
 
-        PathHolder.pathName = getServletContext().getRealPath("/");
-//        System.out.println(PathHolder.pathName);
-
         HttpSession session = req.getSession();
-        String count = String.valueOf(session.getAttribute("count"));
-//        System.out.println("session\t"+count);
+        QRBean qb = (QRBean)session.getAttribute("qb");
 
-        QRBean qb = EnterValue.getValue(count);
-        System.out.println(Department);
+        EnterValue.getValue(qb);
+
         DepartmentJudge dj = new DepartmentJudge();
         dj.judge(Department,qb);
-        EnterValue.Valueload(count,qb);
-        String[] aa=qb.getJudgement();
-        for(int i=0;i<9;i++){
-            System.out.println(aa[i]);
-        }
-        session.invalidate();
-        req.setAttribute("qb",qb);
-        RequestDispatcher dis = req.getRequestDispatcher("stamp");
 
-        dis.forward(req,res);
+        EnterValue.Valueload(qb);
+
+        CardAchieved ca = new CardAchieved();
+        ca.Judge(session,qb);
+//        RequestDispatcher dis = req.getRequestDispatcher("stamp");
+        res.sendRedirect("stamp");
     }
 }

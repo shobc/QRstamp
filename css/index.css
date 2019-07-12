@@ -1,0 +1,16 @@
+*{
+    padding:0;
+    margin:0;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+tr{
+    width: 100%;
+}
+td{
+    width: 34%;
+    height:300px;
+}

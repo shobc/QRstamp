@@ -48,42 +48,35 @@
 ___
 
 ## スタンプのデザイン　
-### [外部サイト](http://generator.tubudeco.com/g655/)で作成
-* 建築監督 40px
-* 建築 40px
-* インテリア 16px
-* 情報処理 40px
-* ゲームプログラミング 12px
-* web動画クリエーター 14px
-* 環境テクノロジー 14px
-* バイオテクノロジー 14px  
+### [外部サイト](http://generator.tubudeco.com/g1256/)で作成
+* 済みスタンプのみ生成
 
 
 ## 各学科のURL
 
 ### 建築監督
-* URL?Department=
+* URL?Department=Architectural_director
 
 ### 建築
-* URL?Department=
+* URL?Department=Architecture
 
 ### インテリア
-* URL?Department=
+* URL?Department=interior
 
 ### 情報処理
-* URL?Department=
+* URL?Department=Information_processing
 
 ### ゲームプログラミング
-* URL?Department=
+* URL?Department=game_programming
 
 ### web動画クリエーター
-* URL?Department=
+* URL?Department=WEB_animation_creator
 
 ### 環境テクノロジー
-* URL?Department=
+* URL?Department=Environmental_technology
 
 ### バイオテクノロジー
-* URL?Department=
+* URL?Department=Biotechnology
 
 ## セキュリティ対策
 
@@ -118,4 +111,4 @@ ___
 
 | ID   | 建築監督   | 建築   | インテリア   | 情報処理   | ゲームプログラミング   | web動画クリエーター   | 環境テクノロジー   | バイオテクノロジー科   |  スタンプ確認済  |  
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | --- |
-    |    |    |    |    |    |    |    |    |
+|

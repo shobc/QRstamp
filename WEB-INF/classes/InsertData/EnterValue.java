@@ -3,18 +3,15 @@ import Bean.QRBean;
 import function.Factory;
 
 public class EnterValue{
-    public static QRBean getValue(String count){
-        String[] judge = Factory.read(count);
+    public static void getValue(QRBean qb){
+        String[] judge = Factory.read(String.valueOf(qb.getNo()));
 
-        QRBean qb = new QRBean();
         for(int i=0;i<judge.length;i++){
             qb.setJudgement(judge[i],i);
         }
-        return qb;
     }
-    public static void Valueload(String count,QRBean qb){
-        String[] value = qb.getJudgement();
-        Factory.load(count,value);
+    public static void Valueload(QRBean qb){
+        Factory.load(String.valueOf(qb.getNo()),qb.getJudgement());
     }
     public static void newValueload(String count,String[] value){
         Factory.load(count,value);

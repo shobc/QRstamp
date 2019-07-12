@@ -20,6 +20,8 @@ public class DepartmentJudge{
             qb.setJudgement("true",6);
         }else if(Department.equals("Biotechnology")){
             qb.setJudgement("true",7);
+        }else if(Department.equals("confirm")){
+            qb.setJudgement("true",8);
         }
     }
 }
