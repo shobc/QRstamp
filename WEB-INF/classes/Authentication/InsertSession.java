@@ -26,7 +26,7 @@ public class InsertSession{
 
             int count = uc.getCount();
 
-            System.out.println("せっっションのBeanに入れる値 "+count);
+            System.out.println("セッションのBeanに入れる値 "+count);
 
             qb.setNo(count);
 
