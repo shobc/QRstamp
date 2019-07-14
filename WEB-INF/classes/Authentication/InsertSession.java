@@ -2,7 +2,9 @@ package Authentication;
 
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Arrays;
+import javax.servlet.http.Cookie;
 
 import InsertData.EnterValue;
 import Bean.QRBean;
@@ -13,35 +15,24 @@ public class InsertSession{
     public InsertSession(UserCount uc){
         this.uc = uc;
     }
-    public void setSession(HttpServletRequest req){
+    public void setSession(HttpServletRequest req,HttpServletResponse res){
         String[] valueString = new String[9];
         String countString = null;
-
         HttpSession session = req.getSession();
-
         qb= (QRBean)session.getAttribute("qb");
-
         if(qb == null){
             qb = new QRBean();
-
             int count = uc.getCount();
-
-            System.out.println("ã‚»ãƒƒã‚·ãƒ§ãƒ³ã®Beanã«å…¥ã‚Œã‚‹å€¤ "+count);
-
+            System.out.println("ƒZƒbƒVƒ‡ƒ“‚ÌBean‚É“ü‚ê‚é’l "+count);
             qb.setNo(count);
-
             session.setAttribute("qb",qb);
-
             qb = (QRBean)session.getAttribute("qb");
-
-            System.out.println("ã‚»ãƒƒã‚·ãƒ§ãƒ³ã«ã‚»ãƒƒãƒˆã—ãŸå€¤"+qb.getNo());
-
+            System.out.println("ƒZƒbƒVƒ‡ƒ“‚ÉƒZƒbƒg‚µ‚½’l"+qb.getNo());
             countString = String.valueOf(count);
-
+            Cookie cookie = new Cookie("SessionNumber",countString);
+            res.addCookie(cookie);
             System.out.println("countString "+countString);
-
             Arrays.fill(valueString,"false");
-
             EnterValue.newValueload(countString,valueString);
 
         }
