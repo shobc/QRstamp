@@ -15,7 +15,7 @@ import InsertData.EnterValue;
 public class QRServlet extends HttpServlet{
     public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
         //文字コードを設定
-        req.setCharacterEncoding("Windows-31j");
+        req.setCharacterEncoding("windows-31j");
         //各学科に対する値を取得する
         String Department = req.getParameter("Department");
         //sessionからBeanを取得する

@@ -4,6 +4,7 @@ import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.FileOutputStream;
+import java.util.Enumeration;
 
 
 public class Factory{
@@ -45,5 +46,26 @@ public class Factory{
         }catch(IOException e){
             e.printStackTrace();
         }
+    }
+    public static int getMaxKeyCount(){
+        int maxKeyNum = 0;
+        Properties props = new Properties();
+        try {
+            props.load(new FileInputStream(path));
+
+            Enumeration en = props.propertyNames();
+            while (en.hasMoreElements()) {
+                String key = (String) en.nextElement();
+                int keynum = Integer.parseInt(key);
+                System.out.println("whileループの中での出力"+keynum);
+                if(maxKeyNum<=keynum){
+                    maxKeyNum=keynum;
+                }
+            }
+            System.out.println("一番大きい値"+maxKeyNum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return maxKeyNum;
     }
 }

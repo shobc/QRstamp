@@ -10,16 +10,16 @@ import function.PathHolder;
 
 public class RevivalSessionServlet extends HttpServlet{
     public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
-        //ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‹ã‚‰ã®å€¤ã‚’å–å¾—ï¼ˆã“ã®å€¤ã¯cookieã§ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒæœ¬æ¥sessionã§æŒã¤å€¤ï¼‰
+        //ƒpƒ‰ƒ[ƒ^‚©‚ç‚Ì’l‚ğæ“¾i‚±‚Ì’l‚Ícookie‚Å‚Ìƒ†[ƒU[‚ª–{—ˆsession‚Å‚Â’lj
         String sessionNum = req.getParameter("sessionNum");
-        //æ–‡å­—åˆ—ã‹ã‚‰intå‹ã«å¤‰æ›
+        //•¶š—ñ‚©‚çintŒ^‚É•ÏŠ·
         int num = Integer.parseInt(sessionNum);
-        //ä¸ãˆã‚‰ã‚ŒãŸä»®æƒ³ãƒ‘ã‚¹ã«å¯¾å¿œã™ã‚‹å®Ÿéš›ã®ãƒ‘ã‚¹ï¼ˆtomcatãŒãƒ€ã‚¦ãƒ³ã—ã¦ã‹ã‚‰ã®åˆã‚ã¦ã®å–å¾—ï¼‰
+        //—^‚¦‚ç‚ê‚½‰¼‘zƒpƒX‚É‘Î‰‚·‚éÀÛ‚ÌƒpƒXitomcat‚ªƒ_ƒEƒ“‚µ‚Ä‚©‚ç‚Ì‰‚ß‚Ä‚Ìæ“¾j
         PathHolder.pathName = getServletContext().getRealPath("/");
-        //sessionã®å¾©æ´»ã‚’ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹
+        //session‚Ì•œŠˆ‚ğ‚·‚é‚½‚ß‚ÌƒNƒ‰ƒX
         RevivalgetSession reSession = new RevivalgetSession();
         reSession.getSession(num,req,res);
-        //Access.htmlã«ãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆã«ã‚¢ã‚¯ã‚»ã‚¹
+        //Access.html‚Éƒ_ƒCƒŒƒNƒg‚ÉƒAƒNƒZƒX
         res.sendRedirect("Access.html");
     }
 }

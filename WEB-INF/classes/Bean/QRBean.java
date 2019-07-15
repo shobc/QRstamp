@@ -3,25 +3,25 @@ package Bean;
 import java.io.Serializable;
 
 public class QRBean implements Serializable{
-    //ä¸€æ„æ€§ã®ç•ªå·ã‚’ä¿æŒã™ã‚‹ãŸã‚ã®ãƒ‡ãƒ¼ã‚¿å‹
+    //ˆêˆÓ«‚Ì”Ô†‚ğ•Û‚·‚é‚½‚ß‚Ìƒf[ƒ^Œ^
     private int no;
-    //å„å­¦ç§‘ã®ä¿æŒã™ã‚‹ãŸã‚ã®é…åˆ—
+    //ŠeŠw‰È‚Ì•Û‚·‚é‚½‚ß‚Ì”z—ñ
     private String[] judgement = new String[9];
-    //publicã®å¼•æ•°ã®ãªã„ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚’å®šç¾©
+    //public‚Ìˆø”‚Ì‚È‚¢ƒRƒ“ƒXƒgƒ‰ƒNƒ^‚ğ’è‹`
     public QRBean(){}
-    //ç•ªå·ã‚’å–å¾—ã™ã‚‹
+    //”Ô†‚ğæ“¾‚·‚é
     public int getNo() {
         return no;
     }
-    //ç•ªå·ã‚’ã‚»ãƒƒãƒˆã™ã‚‹
+    //”Ô†‚ğƒZƒbƒg‚·‚é
     public void setNo(int no) {
         this.no = no;
     }
-    //é…åˆ—å…¨ã¦ã‚’å–å¾—ã™ã‚‹
+    //”z—ñ‘S‚Ä‚ğæ“¾‚·‚é
     public String[] getJudgement() {
         return judgement;
     }
-    //å„å­¦ç§‘ã®å€¤ã‚’ã‚»ãƒƒãƒˆã™ã‚‹
+    //ŠeŠw‰È‚Ì’l‚ğƒZƒbƒg‚·‚é
     public void setJudgement(String judgement,int index) {
         this.judgement[index] = judgement;
     }

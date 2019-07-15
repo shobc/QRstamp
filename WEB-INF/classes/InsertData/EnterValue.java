@@ -1,24 +1,25 @@
 package InsertData;
 import Bean.QRBean;
 import function.Factory;
+import function.RreexistInsertProperties;
 
-//Factoryã‚¯ãƒ©ã‚¹ã¸å€¤ã®ä¿å­˜ã¨å–å¾—ã‚’ã™ã‚‹ã‚¯ãƒ©ã‚¹
+//FactoryƒNƒ‰ƒX‚Ö’l‚Ì•Û‘¶‚Ææ“¾‚ğ‚·‚éƒNƒ‰ƒX
 public class EnterValue{
-    //propertiesãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰å€¤ã‚’å–å¾—ã—Beanã«ã‚»ãƒƒãƒˆã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰
+    //propertiesƒtƒ@ƒCƒ‹‚©‚ç’l‚ğæ“¾‚µBean‚ÉƒZƒbƒg‚·‚éƒƒ\ƒbƒh
     public static void getValue(QRBean qb){
-        //é…åˆ—ã§å–å¾—
+        //”z—ñ‚Åæ“¾
         String[] judge = Factory.read(String.valueOf(qb.getNo()));
-        //å„å­¦ç§‘ã«åˆã†ã‚ˆã†ã«Beanã«å…¥ã‚Œã‚‹
+        //ŠeŠw‰È‚É‡‚¤‚æ‚¤‚ÉBean‚É“ü‚ê‚é
         for(int i=0;i<judge.length;i++){
             qb.setJudgement(judge[i],i);
         }
     }
-    //ä¸€æ„æ€§ã®ã‚ã‚‹å€¤ã¨é…åˆ—ã‚’å…¥ã‚Œã‚‹ãƒ¡ã‚½ãƒƒãƒ‰
+    //ˆêˆÓ«‚Ì‚ ‚é’l‚Æ”z—ñ‚ğ“ü‚ê‚éƒƒ\ƒbƒh
     public static void Valueload(QRBean qb){
         Factory.load(String.valueOf(qb.getNo()),qb.getJudgement());
     }
-    //åˆã‚ã¦ã‚¢ã‚¯ã‚»ã‚¹ã—ãŸã¨ãã®propertiesã®åˆæœŸåŒ–ã‚’ã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰
+    //‰‚ß‚ÄƒAƒNƒZƒX‚µ‚½ê‡‚©Atomcat‚ªƒ_ƒEƒ“‚µ‚½‚Æ‚«‚ÉƒAƒNƒZƒX‚·‚éƒƒ\ƒbƒh
     public static void newValueload(String count,String[] value){
-        Factory.load(count,value);
+        RreexistInsertProperties.newLoad(count,value);
     }
 }
