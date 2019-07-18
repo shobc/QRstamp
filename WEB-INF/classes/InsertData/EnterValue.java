@@ -7,6 +7,7 @@ import function.RreexistInsertProperties;
 public class EnterValue{
     //propertiesファイルから値を取得しBeanにセットするメソッド
     public static void getValue(QRBean qb){
+        System.out.println(qb.getNo());
         //配列で取得
         String[] judge = Factory.read(String.valueOf(qb.getNo()));
         //各学科に合うようにBeanに入れる
@@ -18,7 +19,7 @@ public class EnterValue{
     public static void Valueload(QRBean qb){
         Factory.load(String.valueOf(qb.getNo()),qb.getJudgement());
     }
-    //初めてアクセスした場合か、tomcatがダウンしたときにアクセスするメソッド
+    //初めてアクセスしたときのpropertiesの初期化をするメソッド
     public static void newValueload(String count,String[] value){
         RreexistInsertProperties.newLoad(count,value);
     }

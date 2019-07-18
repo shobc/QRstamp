@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.ServletContext;
+import javax.servlet.http.Cookie;
 
 import Authentication.*;
 import function.*;
@@ -16,6 +17,7 @@ public class RegisterServlet extends HttpServlet{
         req.setCharacterEncoding("Windows-31J");
         //与えられた仮想パスに対応する実際のパス
         PathHolder.pathName = getServletContext().getRealPath("/");
+        System.out.println(PathHolder.pathName);
         //contextScopeの取得
         ServletContext context =getServletContext();
         //一意性の番号を生成するためクラスをインスタンス化
@@ -23,6 +25,7 @@ public class RegisterServlet extends HttpServlet{
         //各端末にセッションに一意性の番号を持たせるためのクラス
         InsertSession is = new InsertSession(uc);
         is.setSession(req,res);
+
         //Access.htmlにダイレクトにアクセス
         res.sendRedirect("Access.html");
     }

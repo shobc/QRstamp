@@ -41,6 +41,14 @@
         <servlet-name>RevivalSessionAccessServlet</servlet-name>
         <url-pattern>/RevivalSessionAccessServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+            <servlet-name>DeleteSessionServlet</servlet-name>
+            <servlet-class>DeleteSessionServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>DeleteSessionServlet</servlet-name>
+            <url-pattern>/DeleteSessionServlet</url-pattern>
+        </servlet-mapping>
 
     <servlet>
         <servlet-name>stamp</servlet-name>
@@ -60,7 +68,7 @@
     </servlet-mapping>
 
     <session-config>
-        <session-timeout>1</session-timeout>
+        <session-timeout>600</session-timeout>
     </session-config>
     <error-page>
         <error-code>404</error-code>

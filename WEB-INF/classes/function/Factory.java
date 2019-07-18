@@ -19,12 +19,15 @@ public class Factory{
         //判定を取得する変数
         String[] judgement = null;
         try{
+            System.out.println("Factoryのkey"+key);
+            System.out.println("Factoryのpath"+path);
             System.out.println("なんの表示だ？ｗ"+System.getProperty("java.class.path"));
             //pathからpropertiesファイルをロードする
             prop.load(new FileInputStream(path));
             //keyを頼りに文字列を取得する
             String value = prop.getProperty(key);
             //文字列を配列に変換する
+            System.out.println("value"+value);
             judgement = value.split(",");
 
         }catch(IOException e){
