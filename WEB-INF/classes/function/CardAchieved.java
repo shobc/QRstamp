@@ -21,6 +21,8 @@ public class CardAchieved{
         //trueかfalseでスタンプ画面の確認ボタンが表示されるか判定される
         if(j==8){
             session.setAttribute("judge","true");
+        }else if(j==9){
+            session.setAttribute("judge","OK");
         }else{
             session.setAttribute("judge","false");
         }

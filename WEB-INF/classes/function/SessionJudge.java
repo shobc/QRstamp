@@ -1,23 +1,26 @@
 package function;
 
+import javax.servlet.http.HttpServletRequest;
+
 import Bean.QRBean;
 import InsertData.EnterValue;
-
-import javax.servlet.http.Cookie;
+import function.SessionSet;
 
 public class SessionJudge{
-    public void Judge(Cookie[] cookie,QRBean qb){
-        if (cookie != null){
-            //クッキーの数だけループ処理
-            for (int i = 0 ; i < cookie.length ; i++){
-                //取得したい値と合っているかの判定
-                if (cookie[i].getName().equals("SessionNumber")){
-                    String number= cookie[i].getValue();
-                    qb.setNo(Integer.parseInt(number));
-                }
-            }
+    public static QRBean judge(QRBean qb,HttpServletRequest req){
+        //Beanに値があるか確認
+        if(qb==null){
+            //IPアドレスを取得
+            String num = req.getRemoteAddr();
+            //Beanをnewする
+            qb = new QRBean();
+            //Beanに値をセットする
+            SessionSet sessionSet = new SessionSet();
+            sessionSet.setValue(num,qb);
+            return qb;
         }
         //Beanに値をセットするクラス
         EnterValue.getValue(qb);
+        return qb;
     }
 }

@@ -2,42 +2,31 @@ package Authentication;
 
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.Arrays;
-import javax.servlet.http.Cookie;
-import java.util.Enumeration;
-import java.lang.StringBuffer;
-
 
 import InsertData.EnterValue;
 import Bean.QRBean;
+import function.PropertiesKeyJudge;
 
 public class InsertSession {
-    private UserCount uc;
     private QRBean qb;
-    public InsertSession(UserCount uc){
-        this.uc = uc;
-    }
-    public void setSession(HttpServletRequest req,HttpServletResponse res){
-        System.out.println("req.getRemoteAddr()="+req.getRemoteAddr());
-        String num = req.getRemoteAddr();
-        String[] valueString = new String[9];
-        String countString = null;
+
+    public void setSession(HttpServletRequest req){
         HttpSession session = req.getSession();
         qb = (QRBean) session.getAttribute("qb");
-        String IPADD = String.valueOf(num.replace(".",""));
-        if (qb == null) {
+        String num = req.getRemoteAddr().replace(".","");
+        if(PropertiesKeyJudge.judge(num)){
             qb = new QRBean();
-            int count = uc.getCount();
-            System.out.println("セッションのBeanに入れる値 " + count);
-            qb.setNo(Integer.parseInt(IPADD));
-            session.setAttribute("qb", qb);
-            qb = (QRBean) session.getAttribute("qb");
-            System.out.println("セッションにセットした値" + qb.getNo());
-            countString = String.valueOf(qb.getNo());
-            System.out.println("countString " + countString);
+            qb.setNo(Integer.parseInt(num));
+            EnterValue.getValue(qb);
+            session.setAttribute("qb",qb);
+        }else if(qb == null) {
+            qb = new QRBean();
+            String[] valueString = new String[9];
+            qb.setNo(Integer.parseInt(num));
             Arrays.fill(valueString, "false");
-            EnterValue.newValueload(countString, valueString);
+            EnterValue.newValueload(num ,valueString);
+            session.setAttribute("qb",qb);
         }
     }
 }

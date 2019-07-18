@@ -19,9 +19,6 @@ public class Factory{
         //判定を取得する変数
         String[] judgement = null;
         try{
-            System.out.println("Factoryのkey"+key);
-            System.out.println("Factoryのpath"+path);
-            System.out.println("なんの表示だ？ｗ"+System.getProperty("java.class.path"));
             //pathからpropertiesファイルをロードする
             prop.load(new FileInputStream(path));
             //keyを頼りに文字列を取得する
@@ -50,25 +47,22 @@ public class Factory{
             e.printStackTrace();
         }
     }
-    public static int getMaxKeyCount(){
-        int maxKeyNum = 0;
-        Properties props = new Properties();
+    public static boolean getKeyJudge(String number){
         try {
-            props.load(new FileInputStream(path));
+            prop.load(new FileInputStream(path));
 
-            Enumeration en = props.propertyNames();
+            Enumeration en = prop.propertyNames();
             while (en.hasMoreElements()) {
                 String key = (String) en.nextElement();
-                int keynum = Integer.parseInt(key);
-                System.out.println("whileループの中での出力"+keynum);
-                if(maxKeyNum<=keynum){
-                    maxKeyNum=keynum;
-                }
+                System.out.println("key="+key);
+                System.out.println("number="+number);
+               if(number.equals(key)){
+                   return true;
+               }
             }
-            System.out.println("一番大きい値"+maxKeyNum);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return maxKeyNum;
+        return false;
     }
 }

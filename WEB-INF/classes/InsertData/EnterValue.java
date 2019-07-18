@@ -7,7 +7,6 @@ import function.RreexistInsertProperties;
 public class EnterValue{
     //propertiesファイルから値を取得しBeanにセットするメソッド
     public static void getValue(QRBean qb){
-        System.out.println(qb.getNo());
         //配列で取得
         String[] judge = Factory.read(String.valueOf(qb.getNo()));
         //各学科に合うようにBeanに入れる

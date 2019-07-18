@@ -1,14 +1,5 @@
 <web-app>
     <servlet>
-        <servlet-name>ConfirmServlet</servlet-name>
-        <servlet-class>ConfirmServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ConfirmServlet</servlet-name>
-        <url-pattern>/ConfirmServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>QRServlet</servlet-name>
         <servlet-class>QRServlet</servlet-class>
     </servlet>
@@ -25,30 +16,23 @@
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
     </servlet-mapping>
+
     <servlet>
-        <servlet-name>RevivalSessionServlet</servlet-name>
-        <servlet-class>RevivalSessionServlet</servlet-class>
+        <servlet-name>DeleteSessionServlet</servlet-name>
+        <servlet-class>DeleteSessionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>RevivalSessionServlet</servlet-name>
-        <url-pattern>/RevivalSessionServlet</url-pattern>
+        <servlet-name>DeleteSessionServlet</servlet-name>
+        <url-pattern>/DeleteSessionServlet</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>RevivalSessionAccessServlet</servlet-name>
-        <servlet-class>RevivalSessionAccessServlet</servlet-class>
+        <servlet-name>ConfirmServlet</servlet-name>
+        <servlet-class>ConfirmServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>RevivalSessionAccessServlet</servlet-name>
-        <url-pattern>/RevivalSessionAccessServlet</url-pattern>
+        <servlet-name>ConfirmServlet</servlet-name>
+        <url-pattern>/ConfirmServlet</url-pattern>
     </servlet-mapping>
-    <servlet>
-            <servlet-name>DeleteSessionServlet</servlet-name>
-            <servlet-class>DeleteSessionServlet</servlet-class>
-        </servlet>
-        <servlet-mapping>
-            <servlet-name>DeleteSessionServlet</servlet-name>
-            <url-pattern>/DeleteSessionServlet</url-pattern>
-        </servlet-mapping>
 
     <servlet>
         <servlet-name>stamp</servlet-name>
@@ -58,18 +42,11 @@
         <servlet-name>stamp</servlet-name>
         <url-pattern>/stamp</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>RevivalSession</servlet-name>
-        <jsp-file>/RevivalSession.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>RevivalSession</servlet-name>
-        <url-pattern>/RevivalSession</url-pattern>
-    </servlet-mapping>
 
     <session-config>
         <session-timeout>600</session-timeout>
     </session-config>
+
     <error-page>
         <error-code>404</error-code>
         <location>/notFound.jsp</location>
