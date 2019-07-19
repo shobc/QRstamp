@@ -8,37 +8,28 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import Bean.QRBean;
-import InsertData.EnterValue;
-import function.DepartmentJudge;
+import Exception.NotSessionAccessException;
+import function.ConfirmJudge;
 
+//BINGOカードと交換できるかの判定
 public class ConfirmServlet extends HttpServlet{
     public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
+        //値を取得
         String Confirm = req.getParameter("Confirm");
-
+        //sessionを取得
         HttpSession session = req.getSession();
+        //Beanを取得し代入する
         QRBean qb = (QRBean) session.getAttribute("qb");
-
-        //Beanからすべての値を取得する
-        String[] Department=qb.getJudgement();
-        //trueの数を判定するための変数
-        int j=0;
-        //配列分ループ処理
-        for(int i=0;i<9;i++){
-            System.out.println(Department[i]);
-            //booleanに変換してif文で判定する
-            boolean boo = Boolean.valueOf(Department[i]);
-            if(boo){
-                j++;
-            }
+        //Beanがあるか判定
+        if(qb != null){
+            //カードを交換の判定をするメソッドを呼び出し
+            ConfirmJudge cj = new ConfirmJudge();
+            cj.Judge(qb,session,Confirm);
+            //stampページにダイレクトにアクセス
+            res.sendRedirect("stamp");
+        }else{
+            //sessionがBeanを持っていなかったら例外を送出する
+            throw new NotSessionAccessException("受付でQRを読み込んでください");
         }
-        //カード交換のところで済みが出るか判定
-        if(j==8){
-            DepartmentJudge dj = new DepartmentJudge();
-            dj.judge(Confirm,qb);
-            EnterValue.Valueload(qb);
-            session.setAttribute("judge","false");
-        }
-        session.setAttribute("qb",qb);
-        res.sendRedirect("stamp");
     }
 }

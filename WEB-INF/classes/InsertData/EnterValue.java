@@ -1,4 +1,5 @@
 package InsertData;
+
 import Bean.QRBean;
 import function.Factory;
 import function.RreexistInsertProperties;

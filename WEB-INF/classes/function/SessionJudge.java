@@ -6,6 +6,7 @@ import Bean.QRBean;
 import InsertData.EnterValue;
 import function.SessionSet;
 
+//ユーザーがsessionをもっているのか判定するクラス
 public class SessionJudge{
     public static QRBean judge(QRBean qb,HttpServletRequest req){
         //Beanに値があるか確認
@@ -17,10 +18,12 @@ public class SessionJudge{
             //Beanに値をセットする
             SessionSet sessionSet = new SessionSet();
             sessionSet.setValue(num,qb);
+            //Beanを返す
             return qb;
         }
         //Beanに値をセットするクラス
         EnterValue.getValue(qb);
+        //Beanを返す
         return qb;
     }
 }

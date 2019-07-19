@@ -3,7 +3,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
+    <!-- スタンプ一覧を表示させるための画面 -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title>スタンプを表示</title>
 </head>
 <body>
@@ -137,6 +139,9 @@
     </table><br>
 <c:if test="${sessionScope.judge=='true'}">
     <a href="Confirm.html"><input type="submit" value="確認"></a>
+</c:if>
+<c:if test="${sessionScope.judge=='OK'}">
+    <a href="">アンケートに答える</a>
 </c:if>
 </body>
 </html>

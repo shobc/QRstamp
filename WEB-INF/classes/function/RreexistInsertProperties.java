@@ -12,10 +12,9 @@ import java.io.FileOutputStream;
 // 中のデータがすべて初期化されるので
 // もともとファイルにある値をMAPに保持してから新しい値と元の値を入れる
 public class RreexistInsertProperties{
-    //propertiesファイルにアクセスするためのpath
-    private static String path = PathHolder.pathName+"ManyFile\\test.properties";
     //tomcatが起動したら呼ばれるメソッド
     public static void newLoad(String newKey,String[] newValue){
+        String path = PathHolder.pathName+"ManyFile\\test.properties";
         //Propertiesをnewする
         Properties prop = new Properties();
         //Propertiesファイルにある値をMAPに入れる
@@ -25,21 +24,26 @@ public class RreexistInsertProperties{
             prop.load(new FileInputStream(path));
             //Enumerationを使用して値を取得
             Enumeration en = prop.propertyNames();
+            //Propertiesにある値の行だけ回す
             while (en.hasMoreElements()) {
+                //keyの取得
                 String key = (String) en.nextElement();
+                //valueの取得
                 String value = prop.getProperty(key);
+                //Mapに値を入れる
                 _initializeProperties.put(key,value);
             }
             //keyと文字列を入れる
             //pathからpropertiesファイルを取得し保存する
             for(String keys : _initializeProperties.keySet()){
                 String value = prop.getProperty(keys);
-                System.out.println(keys+value);
                 prop.setProperty(keys,value);
             }
-            //配列を文字列に変換する
+            //新規の配列を文字列に変換する
             String judge = String.join(",", newValue);
+            //新しいユーザの値を入れる
             prop.setProperty(newKey,judge);
+            //保存をする
             prop.store(new FileOutputStream(path), "Comments");
         }catch(IOException e){
             e.printStackTrace();

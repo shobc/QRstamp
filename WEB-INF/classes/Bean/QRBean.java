@@ -2,6 +2,7 @@ package Bean;
 
 import java.io.Serializable;
 
+//Beanとして利用されるクラス
 public class QRBean implements Serializable{
     //一意性の番号を保持するためのデータ型
     private int no;

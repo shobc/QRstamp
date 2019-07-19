@@ -14,3 +14,24 @@ td{
       width: 34%;
       height:200px;
 }
+
+@media screen and (max-width: 480px) {
+ 	body{
+         text-align: center;
+         font-size:15px;
+     }
+     td{
+           width: 34%;
+           height:100px;
+     }
+ }
+@media screen and (max-width: 350px) {
+	body{
+        text-align: center;
+       font-size:15px;
+    }
+    td{
+          width: 34%;
+          height:100px;
+    }
+}

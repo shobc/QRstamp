@@ -3,6 +3,7 @@ package function;
 import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.Enumeration;
 
@@ -10,7 +11,6 @@ import java.util.Enumeration;
 public class Factory{
     //propertiesをインスタンス化
     private static Properties prop = new Properties();
-    //propertiesファイルまでのパスを取得
     private static String path = PathHolder.pathName+"ManyFile\\test.properties";
     //publicな引数のないコンストラクタ
     private Factory(){}
@@ -24,7 +24,6 @@ public class Factory{
             //keyを頼りに文字列を取得する
             String value = prop.getProperty(key);
             //文字列を配列に変換する
-            System.out.println("value"+value);
             judgement = value.split(",");
 
         }catch(IOException e){
@@ -47,22 +46,27 @@ public class Factory{
             e.printStackTrace();
         }
     }
+    //Propertiesファイルに引数のnumberに該当するkeyがあるかbooleanで判定をする
     public static boolean getKeyJudge(String number){
         try {
+            //Propertiesファイルのロードする
             prop.load(new FileInputStream(path));
-
+            //Enumerationで行数を取得する
             Enumeration en = prop.propertyNames();
+            //行数分ループ処理する
             while (en.hasMoreElements()) {
+                //keyの値を取得する
                 String key = (String) en.nextElement();
-                System.out.println("key="+key);
-                System.out.println("number="+number);
+                //引く数の値がkeyと一致なのか判定する
                if(number.equals(key)){
+                   //一緒だった場合、trueを返す
                    return true;
                }
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
+        //値が一致しなかった場合、falseを返す
         return false;
     }
 }

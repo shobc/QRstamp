@@ -3,24 +3,15 @@
          contentType="text/html;charset=windows-31j" %>
 <html>
 <head>
-    <title>404</title>
+        <!-- ページが存在しないときに表示させる -->
+        <link rel="stylesheet" type="text/css" href="css/NotPage.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>ページが存在しません</title>
 </head>
 <body>
-<style>
-    body{
-        text-align: center;
-        margin-top: 15%;
-    }
-    @media screen and (max-width: 400px){
-        body{
-            font-size: 20px;
-        }
-    }
-</style>
+<h1 class="notPage">ページが存在しません<br>（404）</h1>
 
-<h1>ページが存在しません</h1>
-
-<a href="stamp">ページに戻る</a>
+<a href="stamp"  class="btn-flat-border">スタンプ一覧に戻る</a>
 
 </body>
 </html>

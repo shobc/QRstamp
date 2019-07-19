@@ -11,13 +11,15 @@ import Bean.QRBean;
 import function.*;
 import InsertData.EnterValue;
 
+//各学科のQRについてるパラメータを読み込むためのServlet
 public class QRServlet extends HttpServlet{
     public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
-
-        HttpSession session = req.getSession();
+        //与えられた仮想パスに対応する実際のパス sessionが切れてしまった場合のための保険
+        PathHolder.pathName = getServletContext().getRealPath("/");
         //各学科に対する値を取得する
         String Department = req.getParameter("Department");
         //sessionからBeanを取得する
+        HttpSession session = req.getSession();
         QRBean qb = (QRBean)session.getAttribute("qb");
         //Sessionの保持をしているかの確認
         SessionJudge sj = new SessionJudge();
