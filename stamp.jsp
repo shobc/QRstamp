@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/stamp.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title>スタンプを表示</title>
+    <script  src="js/OSJudge.js"></script>
 </head>
 <body>
 <c:if test="${sessionScope.qb.judgement[0]=='true'}" var="judge0"/>
@@ -24,31 +25,31 @@
     <div class="flex_test-item">
         <c:if test="${judge0}">
                 <p>建築監督</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
             </c:if>
             <c:if test="${!judge0}">
                 <p>建築監督</p>
-                <img src="image/Transparent.png" height="80%" width="100%">
+                <img src="image/Transparent.png" class="picture" height="80%" width="100%">
             </c:if>
     </div>
     <div class="flex_test-item">
         <c:if test="${judge1}">
                 <p>建築</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
             </c:if>
             <c:if test="${!judge1}">
                 <p>建築</p>
-                <img src="image/Transparent.png" height="80%" width="100%">
+                <img src="image/Transparent.png" class="picture" height="80%" width="100%">
             </c:if>
     </div>
     <div class="flex_test-item">
             <c:if test="${judge2}">
                 <p>インテリア</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
             </c:if>
             <c:if test="${!judge2}">
                 <p>インテリア</p>
-                <img src="image/Transparent.png" height="80%" width="100%">
+                <img src="image/Transparent.png" class="picture" height="80%" width="100%">
             </c:if>
     </div>
 </div>
@@ -57,32 +58,32 @@
     <div class="flex_test-item">
         <c:if test="${judge3}">
                 <p>情報処理</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
             </c:if>
             <c:if test="${!judge3}">
             	<p>情報処理</p>
-        		<img src="image/Transparent.png" height="80%" width="100%">
+        		<img src="image/Transparent.png" class="picture" height="80%" width="100%">
         </c:if>
     </div>
     <div class="flex_test-item">
         <c:if test="${judge4}">
                 <p>ゲーム</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
             </c:if>
             <c:if test="${!judge4}">
                 <p>ゲーム</p>
-                <img src="image/Transparent.png" height="80%" width="100%">
+                <img src="image/Transparent.png" class="picture" height="80%" width="100%">
             </c:if>
     </div>
     <div class="flex_test-item">
         <c:if test="${judge5}">
-                <p>web動画</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <p>WEB動画</p>
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
                 </td>
             </c:if>
             <c:if test="${!judge5}">
-                <p>web動画</p>
-                <img src="image/Transparent.png" height="80%" width="100%">
+                <p>WEB動画</p>
+                <img src="image/Transparent.png" class="picture" height="80%" width="100%">
                 </td>
             </c:if>
     </div>
@@ -93,36 +94,36 @@
     <div class="flex_test-item">
         <c:if test="${judge6}">
                 <p>環境</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
                 </td>
             </c:if>
             <c:if test="${!judge6}">
                 <p>環境</p>
-                <img src="image/Transparent.png" height="80%" width="100%">
+                <img src="image/Transparent.png" class="picture" height="80%" width="100%">
                 </td>
             </c:if>
     </div>
     <div class="flex_test-item">
         <c:if test="${judge7}">
     <p>バイオ</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
                 </td>
             </c:if>
             <c:if test="${!judge7}">
     <p>バイオ</p>
-                <img src="image/Transparent.png" height="80%" width="100%">
+                <img src="image/Transparent.png" class="picture" height="80%" width="100%">
                 </td>
             </c:if>
     </div>
     <div class="flex_test-item">
         <c:if test="${judge8}">
                 <p>カード交換</p>
-                <img src="image/Already.png" height="80%" width="100%">
+                <img src="image/Already.png" class="picture" height="80%" width="100%">
                 </td>
             </c:if>
             <c:if test="${!judge8}">
                 <p>カード交換</p>
-                <img src="image/Transparent.png" height="80%" width="100%">
+                <img src="image/Transparent.png" class="picture" height="80%" width="100%">
                 </td>
             </c:if>
     </div>
