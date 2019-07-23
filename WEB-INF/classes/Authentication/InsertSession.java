@@ -17,12 +17,13 @@ public class InsertSession {
         qb = (QRBean) session.getAttribute("qb");
         //IPアドレスを取得して.を空白と入れ替えてString型に代入する
         String num = req.getRemoteAddr().replace(".","");
+        System.out.println(num);
         //IPアドレスがPropertiesファイルに入っているか判定する
         if(PropertiesKeyJudge.judge(num)){
             //新しくBeanを生成
             qb = new QRBean();
             //BeanのNoに値をセットする
-            qb.setNo(Integer.parseInt(num));
+            qb.setNo(num);
             //PropertiesファイルからBeanに値をセットする
             EnterValue.getValue(qb);
             //sessionにBeanをセットする
@@ -31,7 +32,7 @@ public class InsertSession {
             //新しくBeanを生成する
             qb = new QRBean();
             //BeanのNoに値をセットする
-            qb.setNo(Integer.parseInt(num));
+            qb.setNo(num);
             //Propertiesファイルのvalueを初期化するための配列を生成
             String[] valueString = new String[9];
             //配列のすべてにfalseを入れる

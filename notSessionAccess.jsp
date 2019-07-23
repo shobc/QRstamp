@@ -4,6 +4,7 @@
 <html>
 <head>
         <!-- Sessionの値がないのにいろいろなページにアクセスしたときに起きる例外のメッセージを起こすページ -->
+            <link rel="shortcut icon" href="image/icon.ico">
         <link rel="stylesheet" type="text/css" href="css/NotPage.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
         <title>エラーページ</title>

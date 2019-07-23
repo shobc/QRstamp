@@ -9,7 +9,7 @@ public class EnterValue{
     //propertiesファイルから値を取得しBeanにセットするメソッド
     public static void getValue(QRBean qb){
         //配列で取得
-        String[] judge = Factory.read(String.valueOf(qb.getNo()));
+        String[] judge = Factory.read(qb.getNo());
         //各学科に合うようにBeanに入れる
         for(int i=0;i<judge.length;i++){
             qb.setJudgement(judge[i],i);

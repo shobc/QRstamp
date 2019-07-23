@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+.flex_test-box {
+    padding:  10px;             /* 余白指定 */
+    display: flex;
+    justify-content:center;
+}
+
+.flex_test-item {
+    height:250px;
+    padding: 10px;
+    color:  #fff;               /* 文字色 */
+    margin:  10px;              /* 外側の余白 */
+    border-radius:  5px;        /* 角丸指定 */
+}
+
+.flex_test-item:nth-child(1) {
+    background-color:  #eac287; /* 背景色指定 */
+}
+
+.flex_test-item:nth-child(2) {
+    background-color: #ebcc00; /* 背景色指定 */
+}
+
+.flex_test-item:nth-child(3) {
+    background-color:#e4aa01; /* 背景色指定 */
+}
+.btn-circle-flat {
+  display: inline-block;
+  text-decoration: none;
+  background: #cbb586;
+  color: #FFF;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.btn-circle-flat:hover {
+  background: white;
+  color:black;
+}
+
+@media screen and (max-width: 480px) {
+ 	body{
+         text-align: center;
+         font-size:15px;
+     }
+    .flex_test-box {
+       padding:  3px;             /* 余白指定 */
+    }
+
+    .flex_test-item {
+       height:25%;
+       padding: 3px;
+       margin:  3px;              /* 外側の余白 */
+    }
+
+ }
+@media screen and (max-width: 350px) {
+	body{
+        text-align: center;
+       font-size:15px;
+    }
+      .flex_test-box {
+          padding:  3px;             /* 余白指定 */
+      }
+
+      .flex_test-item {
+          height:25%;
+          padding: 3px;
+          margin:  3px;              /* 外側の余白 */
+      }
+}

@@ -48,33 +48,6 @@ ___
 ### [外部サイト](http://generator.tubudeco.com/g1256/)で作成
 * 済みスタンプのみ生成
 
-
-## 各学科のURL
-
-### 建築監督
-* URL?Department=Architectural_director
-
-### 建築
-* URL?Department=Architecture
-
-### インテリア
-* URL?Department=interior
-
-### 情報処理
-* URL?Department=Information_processing
-
-### ゲームプログラミング
-* URL?Department=game_programming
-
-### web動画クリエーター
-* URL?Department=WEB_animation_creator
-
-### 環境テクノロジー
-* URL?Department=Environmental_technology
-
-### バイオテクノロジー
-* URL?Department=Biotechnology
-
 ## セキュリティ対策
 
 * パラメータを隠す（スタンプの不正を防ぐ）

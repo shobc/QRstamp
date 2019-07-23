@@ -29,9 +29,7 @@ public class ConfirmJudge{
             dj.judge(Confirm,qb);
             //Beanの値をPropertiesファイルに入れる
             EnterValue.Valueload(qb);
-            //sessionでカード交換のボタンをなくす値を入れる
-            session.setAttribute("judge","false");
-        }else if(j==9){
+            //アンケートをするためのsessionを渡す
             session.setAttribute("judge","OK");
         }
         //sessionにBeanをセットする

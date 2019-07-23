@@ -12,7 +12,7 @@ public class SessionSet {
         //Propertiesに同じIPアドレスの値があるか判定をする
         if(Factory.getKeyJudge(num)){
             //IPアドレスをBeanのNoにsetする
-            qb.setNo(Integer.parseInt(num));
+            qb.setNo(num);
             //Beanに値をセットするクラス
             EnterValue.getValue(qb);
         }else{//なかった場合例外をスローして例外ページに行く
