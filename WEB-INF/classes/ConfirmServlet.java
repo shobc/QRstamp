@@ -10,10 +10,13 @@ import javax.servlet.http.HttpSession;
 import Bean.QRBean;
 import Exception.NotSessionAccessException;
 import function.ConfirmJudge;
+import function.CutWifi;
 
 //BINGOカードと交換できるかの判定
 public class ConfirmServlet extends HttpServlet{
     public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
+        //学校のwifiに接続されている場合例外を吐くクラス
+        CutWifi.Judge();
         //値を取得
         String Confirm = req.getParameter("Confirm");
         //sessionを取得

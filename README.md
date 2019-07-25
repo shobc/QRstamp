@@ -61,7 +61,7 @@ ___
 * java
 * HTML
 * CSS
-* JavaScript 
+* JavaScript
 
 ## 使う環境
 * スマホ
