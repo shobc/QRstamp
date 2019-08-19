@@ -22,6 +22,9 @@ public class QRServlet extends HttpServlet{
         PathHolder.pathName = getServletContext().getRealPath("/");
         //ŠeŠw‰È‚É‘Î‚·‚é’l‚ðŽæ“¾‚·‚é
         String Department = req.getParameter("Department");
+        if(Department==null){
+            Department = "";
+        }
         //session‚©‚çBean‚ðŽæ“¾‚·‚é
         HttpSession session = req.getSession();
         QRBean qb = (QRBean)session.getAttribute("qb");

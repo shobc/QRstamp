@@ -4,20 +4,14 @@
     <file url="file://$PROJECT_DIR$/Access.html" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/Confirm.html" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/DeleteSession.html" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/RevivalSession.html" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/RevivalSession.jsp" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/WEB-INF/classes/Authentication/AuthenticateFilter.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/Authentication/InsertSession.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/Bean/QRBean.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/DeleteSessionServlet.java" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/WEB-INF/classes/EventListener/TomcatStartup.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/Exception/NotSessionAccessException.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/InsertData/EnterValue.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/QRServlet.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.java" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/WEB-INF/classes/RevivalSessionAccessServlet.java" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/WEB-INF/classes/RevivalSessionServlet.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/function/CardAchieved.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.java" charset="windows-31j" />
@@ -30,8 +24,7 @@
     <file url="file://$PROJECT_DIR$/WEB-INF/classes/function/SessionSet.java" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/notFound.jsp" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/notSessionAccess.jsp" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/smaple.html" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/stamp.jsp" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/top.jsp" charset="windows-31j" />
+    <file url="PROJECT" charset="windows-31j" />
   </component>
 </project>

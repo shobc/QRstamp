@@ -4,7 +4,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import Bean.QRBean;
 import InsertData.EnterValue;
-import function.SessionSet;
 
 //ユーザーがsessionをもっているのか判定するクラス
 public class SessionJudge{

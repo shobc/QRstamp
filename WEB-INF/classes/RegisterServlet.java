@@ -22,6 +22,6 @@ public class RegisterServlet extends HttpServlet{
         InsertSession is = new InsertSession();
         is.setSession(req);
         //Access.htmlにダイレクトにアクセス
-        res.sendRedirect("Access.html");
+        res.sendRedirect("stamp");
     }
 }
