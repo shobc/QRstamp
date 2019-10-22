@@ -11,18 +11,22 @@ import Bean.QRBean;
 import Exception.NotSessionAccessException;
 import function.ConfirmJudge;
 import function.CutWifi;
+import function.SessionJudge;
 
 //BINGOカードと交換できるかの判定
 public class ConfirmServlet extends HttpServlet{
     public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
         //学校のwifiに接続されている場合例外を吐くクラス
-        CutWifi.Judge();
+        CutWifi.Judge(req);
         //値を取得
         String Confirm = req.getParameter("Confirm");
         //sessionを取得
         HttpSession session = req.getSession();
         //Beanを取得し代入する
         QRBean qb = (QRBean) session.getAttribute("qb");
+        //Sessionの保持をしているかの確認
+        SessionJudge sj = new SessionJudge();
+        qb = sj.judge(qb,req);
         //Beanがあるか判定
         if(qb != null){
             //カードを交換の判定をするメソッドを呼び出し

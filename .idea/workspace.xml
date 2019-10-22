@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ff7d46-123e-4523-9cbf-a9933932d50d" name="Default Changelist" comment="" />
+    <list default="true" id="34ff7d46-123e-4523-9cbf-a9933932d50d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/servlet-api.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManyFile/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ManyFile/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Authentication/InsertSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Authentication/InsertSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/InsertData/EnterValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InsertData/EnterValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/QRServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/QRServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/QRServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/QRServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/Factory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/RreexistInsertProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/RreexistInsertProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/RreexistInsertProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/RreexistInsertProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/SessionJudge.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/SessionJudge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stamp.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stamp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Already.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Already.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/OSJudge.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/OSJudge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stamp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/stamp.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +71,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563075147343" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.20883535" />
   </component>
@@ -95,7 +124,14 @@
       <option name="presentableId" value="Default" />
       <updated>1563067528004</updated>
       <workItem from="1563071212236" duration="1342000" />
-      <workItem from="1564447700556" duration="11266000" />
+      <workItem from="1564447700556" duration="12490000" />
+      <workItem from="1567147584510" duration="8184000" />
+      <workItem from="1568869494814" duration="8427000" />
+      <workItem from="1569562725224" duration="716000" />
+      <workItem from="1569714419077" duration="1796000" />
+      <workItem from="1570017314273" duration="1526000" />
+      <workItem from="1570263936789" duration="2393000" />
+      <workItem from="1570759555495" duration="39900000" />
     </task>
     <servers />
   </component>
@@ -107,11 +143,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WEB-INF/classes/QRServlet.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WEB-INF/classes/function/SessionJudge.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WEB-INF/classes/InsertData/EnterValue.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -130,20 +189,5 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

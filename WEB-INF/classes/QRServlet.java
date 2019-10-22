@@ -17,7 +17,7 @@ import InsertData.EnterValue;
 public class QRServlet extends HttpServlet{
     public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
         //学校のwifiに接続されている場合例外を吐くクラス
-        CutWifi.Judge();
+        CutWifi.Judge(req);
         //与えられた仮想パスに対応する実際のパス sessionが切れてしまった場合のための保険
         PathHolder.pathName = getServletContext().getRealPath("/");
         //各学科に対する値を取得する

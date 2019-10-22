@@ -11,11 +11,12 @@ import java.util.Enumeration;
 public class Factory{
     //propertiesをインスタンス化
     private static Properties prop = new Properties();
-    private static String path = PathHolder.pathName+"ManyFile\\test.properties";
+    private static String path = PathHolder.pathName+"ManyFile/test.properties";
     //publicな引数のないコンストラクタ
     private Factory(){}
     //propertiesファイルを読み込むためのメソッド
     public static String[] read(String key){
+        System.out.println(path);
         //判定を取得する変数
         String[] judgement = null;
         try{

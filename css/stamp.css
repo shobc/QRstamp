@@ -45,11 +45,18 @@
   color:black;
 }
 
+img.picture{
+    height:25%;
+}
+
 @media screen and (max-width: 480px) {
  	body{
          text-align: center;
          font-size:15px;
      }
+    img.picture{
+        height:25%;
+    }
     .flex_test-box {
        padding:  3px;             /* 余白指定 */
     }
@@ -70,6 +77,9 @@
       .flex_test-box {
           padding:  3px;             /* 余白指定 */
       }
+    img.picture{
+        height:25%;
+    }
 
       .flex_test-item {
           height:25%;

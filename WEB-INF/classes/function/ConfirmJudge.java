@@ -14,7 +14,6 @@ public class ConfirmJudge{
         int j=0;
         //”z—ñ•ªƒ‹[ƒvˆ—
         for(int i=0;i<9;i++){
-            System.out.println(Department[i]);
             //boolean‚É•ÏŠ·‚µ‚Äif•¶‚Å”»’è‚·‚é
             boolean boo = Boolean.valueOf(Department[i]);
             //true‚©”»’è‚ğ‚·‚é

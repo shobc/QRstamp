@@ -13,8 +13,10 @@ import java.io.FileOutputStream;
 // もともとファイルにある値をMAPに保持してから新しい値と元の値を入れる
 public class RreexistInsertProperties{
     //tomcatが起動したら呼ばれるメソッド
-    public static void newLoad(String newKey,String[] newValue){
-        String path = PathHolder.pathName+"ManyFile\\test.properties";
+    //同時にアクセスがあった場合整合性が合わない可能性があるのでsynchronizedを付与する
+    public synchronized static void newLoad(String newKey,String[] newValue){
+        String path = PathHolder.pathName+"ManyFile/test.properties";
+        System.out.println("一番最初のpath"+path);
         //Propertiesをnewする
         Properties prop = new Properties();
         //Propertiesファイルにある値をMAPに入れる
