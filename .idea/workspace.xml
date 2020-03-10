@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34ff7d46-123e-4523-9cbf-a9933932d50d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/servlet-api.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManyFile/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ManyFile/test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Authentication/InsertSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Authentication/InsertSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ConfirmServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/InsertData/EnterValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InsertData/EnterValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/QRServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/QRServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/QRServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/QRServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/ConfirmJudge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/CutWifi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/Factory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/RreexistInsertProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/RreexistInsertProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/RreexistInsertProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/RreexistInsertProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/function/SessionJudge.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/function/SessionJudge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stamp.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stamp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Already.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Already.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/OSJudge.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/OSJudge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stamp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/stamp.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +48,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563075147343" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../movie" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -132,6 +109,7 @@
       <workItem from="1570017314273" duration="1526000" />
       <workItem from="1570263936789" duration="2393000" />
       <workItem from="1570759555495" duration="39900000" />
+      <workItem from="1583819875787" duration="747000" />
     </task>
     <servers />
   </component>
